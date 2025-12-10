@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Wars - Veículos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/CSS/styles.css"/>
+</head>
+<body>
+  <header class="bg-dark text-white p-3">
+    <div class="container"><h1>Star Wars API Explorer</h1></div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="films.html">Filmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html">Personagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="planets.html">Planetas</a></li>
+          <li class="nav-item"><a class="nav-link active" href="vehicles.html">Veículos</a></li>
+          <li class="nav-item"><a class="nav-link" href="starships.html">Espaçonaves</a></li>
+          <li class="nav-item"><a class="nav-link" href="species.html">Espécies</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h2>Veículos</h2>
+    <input type="text" id="search" class="form-control mb-3" placeholder="Buscar por nome..."/>
+    <ul id="list" class="list-group"></ul>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2023 Star Wars Fans. Dados da SWAPI.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="itemModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/JS/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      loadData('vehicles', 'name');
+    });
+  </script>
+</body>
+</html>

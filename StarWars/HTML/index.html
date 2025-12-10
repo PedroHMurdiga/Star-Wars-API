@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Wars API Explorer - Início</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/CSS/styles.css"/>
+  <link rel="stylesheet" href="/CSS/indexstyle.css"/>
+</head>
+<body>
+  <header class="bg-dark text-white p-3">
+    <div class="container"><h1>Star Wars API Explorer</h1></div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Início</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="films.html">Filmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="characters.html">Personagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="planets.html">Planetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="vehicles.html">Veículos</a></li>
+          <li class="nav-item"><a class="nav-link" href="starships.html">Espaçonaves</a></li>
+          <li class="nav-item"><a class="nav-link" href="species.html">Espécies</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Hero -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">Bem-vindo ao Universo Star Wars</h1>
+      <p class="hero-subtitle">Explore filmes, personagens, planetas e muito mais usando a SWAPI. Que a Força esteja com você!</p>
+      <a href="#explore" class="btn btn-primary btn-lg">Explorar Agora</a>
+    </div>
+  </section>
+
+  <!-- Seção de Exploração -->
+  <section id="explore" class="explore-section">
+    <div class="container">
+      <h2 class="text-center mb-4" style="font-family: 'Orbitron', monospace; color: #f4e87c;">Explorar o Universo</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg" class="card-img-top" alt="Poster de Filme Star Wars">
+            <div class="card-body">
+              <h5 class="card-title">Filmes</h5>
+              <p class="card-text">Descubra os épicos filmes da saga Star Wars, de "Uma Nova Esperança" aos mais recentes.</p>
+              <a href="films.html" class="btn btn-primary">Ver Filmes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="/IMG/persona.webp" class="card-img-top" alt="Ícone de Personagem">
+            <div class="card-body">
+              <h5 class="card-title">Personagens</h5>
+              <p class="card-text">Conheça heróis como Luke Skywalker, vilões como Darth Vader e muitos outros.</p>
+              <a href="characters.html" class="btn btn-primary">Ver Personagens</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="/IMG/planetas.webp" class="card-img-top" alt="Imagem de Planeta">
+            <div class="card-body">
+              <h5 class="card-title">Planetas</h5>
+              <p class="card-text">Explore mundos como Tatooine, Coruscant e outros planetas da galáxia.</p>
+              <a href="planets.html" class="btn btn-primary">Ver Planetas</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="/IMG/veiculos.webp" class="card-img-top" alt="Imagem de Veículo">
+            <div class="card-body">
+              <h5 class="card-title">Veículos</h5>
+              <p class="card-text">Descubra veículos terrestres e aéreos usados na saga, como speeders e tanques.</p>
+              <a href="vehicles.html" class="btn btn-primary">Ver Veículos</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="/IMG/naves.webp" class="card-img-top" alt="Imagem de Espaçonave">
+            <div class="card-body">
+              <h5 class="card-title">Espaçonaves</h5>
+              <p class="card-text">Admire naves icônicas como o Millennium Falcon e caças estelares.</p>
+              <a href="starships.html" class="btn btn-primary">Ver Espaçonaves</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="/IMG/racas.webp" class="card-img-top" alt="Imagem de Espécie">
+            <div class="card-body">
+              <h5 class="card-title">Espécies</h5>
+              <p class="card-text">Conheça raças alienígenas como Wookiees, Ewoks e muitas outras.</p>
+              <a href="species.html" class="btn btn-primary">Ver Espécies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2023 Star Wars Fans. Dados da SWAPI.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
